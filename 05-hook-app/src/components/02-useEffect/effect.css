@@ -1,0 +1,15 @@
+body{
+    padding: 70px;
+}
+
+input{
+    margin: 10px;
+}
+
+h1{
+    text-align:center;
+}
+
+.text-right{
+    text-align: right;
+}

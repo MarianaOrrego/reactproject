@@ -1,0 +1,15 @@
+blockquote{
+    display: flex;
+}
+
+body{
+    padding: 70px;
+}
+
+.cuerpo pre{
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+}
