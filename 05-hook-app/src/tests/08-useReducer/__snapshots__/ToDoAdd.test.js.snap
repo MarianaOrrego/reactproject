@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <ToDoAdd /> debe de mostrarse correctamente 1`] = `
+<Fragment>
+  <h4>
+    Agregar tarea
+  </h4>
+  <hr />
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      autoComplete="off"
+      className="form-control"
+      name="description"
+      onChange={[Function]}
+      placeholder="Tarea pendiente..."
+      type="text"
+      value=""
+    />
+    <div
+      className="d-flex justify-content-center mt-3"
+    >
+      <button
+        className="btn btn-outline-primary"
+        type="submit"
+      >
+        Agregar
+      </button>
+    </div>
+  </form>
+</Fragment>
+`;

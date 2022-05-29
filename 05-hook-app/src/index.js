@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { MainApp } from './components/09-useContext/MainApp';
 // import { CallbackHook } from './components/06-memos/CallbackHook';
-import { ToDoApp } from './components/08-useReducer/ToDoApp';
+// import { ToDoApp } from './components/08-useReducer/ToDoApp';
 // import { MemoHook } from './components/06-memos/MemoHook';
 // import { Memorize } from './components/06-memos/Memorize';
 // import { Layout } from './components/05-useLayoutEffect/Layout';
@@ -16,6 +17,6 @@ import { ToDoApp } from './components/08-useReducer/ToDoApp';
 import './index.css';
 
 ReactDOM.render(
-  <ToDoApp />,
+  <MainApp />,
 document.getElementById('root')
 );

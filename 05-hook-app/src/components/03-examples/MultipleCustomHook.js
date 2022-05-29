@@ -6,11 +6,9 @@ export const MultipleCustomHook = () => {
 
     const {counter, increment} = useCouter(1);
 
-    const { loading, data} = useFetch(`https://www.breakingbadapi.com/api/quotes/${ counter }`);
+    const {loading, data} = useFetch(`https://www.breakingbadapi.com/api/quotes/${ counter }`);
 
     const {author, quote } = !!data && data[0];
-
-    console.log(author, quote)
 
   return (
     <div>
