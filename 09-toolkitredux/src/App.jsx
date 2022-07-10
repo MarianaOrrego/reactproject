@@ -1,42 +1,30 @@
-import { useState } from 'react'
+import {useSelector, useDispatch} from 'react-redux';
 import logo from './logo.svg'
 import './App.css'
+import { increment, decrement, incrementBy } from './store/Slice/counter';
 
 function App() {
-  const [count, setCount] = useState(0)
+  
+  const { counter } = useSelector( state => state.counter);
+  const dispatch = useDispatch();
 
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
+        <p>count is: {counter}</p>
         <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
+          <button type="button" onClick={() => dispatch(increment())}>
+            Increment
+          </button>
+          <button type="button" onClick={() => dispatch(decrement())}>
+            Decrement
+          </button>
+          <button type="button" onClick={() => dispatch(incrementBy(2))}>
+            Increment by 2 
           </button>
         </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
+       
       </header>
     </div>
   )
